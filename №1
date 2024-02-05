@@ -1,0 +1,13 @@
+numbers_str = input("Введіть числа, розділені пробілами: ")
+
+numbers = [int(x) for x in numbers_str.split()]
+
+total = 0
+
+for number in numbers:
+    # Перевірка, чи число більше або рівне нулю
+    if number >= 0:
+        # Додавання числа до суми
+        total += number
+
+print("Сума чисел, більших або рівних нулю:", total)
