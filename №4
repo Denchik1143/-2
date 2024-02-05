@@ -1,0 +1,10 @@
+def is_palindrome(s):
+    s = s.replace(" ", "").lower()
+    return s == s[::-1]
+
+string = input("Введіть рядок для перевірки на паліндром: ")
+
+if is_palindrome(string):
+    print("Це паліндром!")
+else:
+    print("Це не паліндром!")
