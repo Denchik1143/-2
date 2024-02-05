@@ -1,0 +1,19 @@
+input_string = input("Введіть рядок: ")
+
+unique_characters = []
+
+character_count = {}
+
+for char in input_string:
+    if char not in unique_characters:
+        unique_characters.append(char)
+    
+    if char in character_count:
+        character_count[char] += 1
+    else:
+        character_count[char] = 1
+
+print("Унікальні символи:", unique_characters)
+print("Підрахунок кількості символів:")
+for char, count in character_count.items():
+    print(f"{char}: {count}")
