@@ -1,0 +1,11 @@
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+
+keys = my_dict.keys()
+values = my_dict.values()
+
+tuple_result = tuple(zip(keys, values))
+
+list_result = list(zip(keys, values))
+
+print("Кортеж:", tuple_result)
+print("Список:", list_result)
