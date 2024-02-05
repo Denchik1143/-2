@@ -1,0 +1,8 @@
+def reverse_words(sentence):
+    words = sentence.split()
+
+    for word in words:
+        print(word[::-1])
+
+sentence = "Це приклад речення для перевірки"
+reverse_words(sentence)
